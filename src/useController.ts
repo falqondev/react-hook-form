@@ -158,6 +158,7 @@ export function useController<
 
           if (field && elm) {
             field._f.ref = {
+              element: elm,
               focus: () => elm.focus(),
               select: () => elm.select(),
               setCustomValidity: (message: string) =>
